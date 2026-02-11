@@ -27,11 +27,11 @@ export default function TodoItem({
           checked={todo.completed}
           onChange={() => onToggle(todo._id)}
           disabled={isLoading}
-          className="w-5 h-5 accent-green-600 cursor-pointer mt-1 flex-shrink-0 disabled:opacity-50"
+          className="w-5 h-5 accent-green-600 cursor-pointer mt-1 shrink-0 disabled:opacity-50"
         />
         <div className="flex-1 min-w-0">
           <h3
-            className={`font-semibold text-gray-800 break-words ${
+            className={`font-semibold text-gray-800 wrap-break-words ${
               todo.completed ? "line-through text-gray-500" : ""
             }`}
           >
@@ -39,7 +39,7 @@ export default function TodoItem({
           </h3>
           {todo.description && (
             <p
-              className={`text-sm mt-1 break-words ${
+              className={`text-sm mt-1 wrap-break-words ${
                 todo.completed ? "text-gray-400" : "text-gray-600"
               }`}
             >
@@ -52,7 +52,7 @@ export default function TodoItem({
         </div>
       </div>
 
-      <div className="flex gap-2 flex-shrink-0">
+      <div className="flex gap-2 shrink-0">
         <button
           onClick={() => onEdit(todo)}
           disabled={isLoading}

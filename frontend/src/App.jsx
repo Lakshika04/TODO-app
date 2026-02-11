@@ -137,11 +137,11 @@ export default function App() {
   const completedCount = todos.filter((t) => t.completed).length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8 px-4">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50 py-8 px-4">
       <div className="flex flex-col items-center">
         {/* Header */}
         <div className="w-full max-w-2xl mb-8">
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">
+          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-linear-to-br from-blue-600 to-indigo-600 mb-2">
             ✨ Task Manager
           </h1>
           <p className="text-gray-600">Stay organized and track your progress</p>
